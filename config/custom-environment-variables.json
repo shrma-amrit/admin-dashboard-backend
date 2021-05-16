@@ -1,0 +1,8 @@
+{
+  "mongoDb": {
+    "uri": "MONGODB_URI"
+  },
+  "www": {
+    "port": "PORT"
+  }
+}

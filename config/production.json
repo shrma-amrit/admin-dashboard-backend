@@ -1,0 +1,8 @@
+{
+  "mongoDb": {
+    "uri": "mongodb+srv://shrma-amrit007:PMfnRvYYhzXoiui5@amrit-personal.gfua8.mongodb.net/test?authSource=admin&replicaSet=atlas-yr4hbw-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
+  },
+  "www": {
+    "port": 4500
+  }
+}

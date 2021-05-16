@@ -1,0 +1,17 @@
+{
+  "name": "admin-dashboard-backend",
+  "env": {
+    "MONGODB_URI": {
+      "description": "Connection string to connect to MongoDB database",
+      "required": true
+    },
+    "NODE_ENV": {
+      "description": "Node environment",
+      "required": true
+    },
+    "NODE_CONFIGENV": {
+      "description": "Configuration environment",
+      "required": true
+    }
+  }
+}

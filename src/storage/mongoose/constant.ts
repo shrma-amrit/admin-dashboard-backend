@@ -14,6 +14,7 @@ const departments = {
 }
 
 export const CONSTANTS = {
+  EMPLOYEE_STATUS: status,
   EMPLOYEE: {
     DEPARTMENT_ENUM: Object.values(departments),
     STATUS_ENUM: Object.values(status),

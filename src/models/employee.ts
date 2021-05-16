@@ -7,6 +7,7 @@ export class Employee extends BaseModel {
   phone: string;
   status: string;
   salary: number;
+  department: string;
   doj?: Date;
 
   constructor(json?: any) {
@@ -17,7 +18,8 @@ export class Employee extends BaseModel {
       this.phone = json.phone;
       this.status = json.status;
       this.salary = json.salary;
-      if (json.doj) {
+      this.department = json.department;
+      if (json.createdAt) {
         this.doj = json.createdAt;
       }
     }
@@ -31,6 +33,7 @@ export class Employee extends BaseModel {
       phone : this.phone,
       status : this.status,
       salary : this.salary,
+      department: this.department,
       doj : this.doj
     };
 
