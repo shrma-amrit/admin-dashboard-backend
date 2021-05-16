@@ -26,7 +26,7 @@ export class App {
     this.initializeMiddlewares();
     this.initializeControllers();
     this.initializeErrorHandling();
-    const PORT = config.get('www.port');
+    const PORT = process.env.PORT || 4200;
     const server = this.expressApp.listen(PORT);
     server.on('listening', EventListeners.onListening);
     server.on('error', EventListeners.onError);
