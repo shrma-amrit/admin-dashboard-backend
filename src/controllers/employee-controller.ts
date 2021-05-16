@@ -31,7 +31,7 @@ export class EmployeeController extends BaseController {
       // updateUserValidator(this.appContext),
       this.getEmployee
     );
-    this.router.put(
+    this.router.patch(
       `${this.basePath}/:employeeId`,
       // updateUserValidator(this.appContext),
       this.updateEmployee
