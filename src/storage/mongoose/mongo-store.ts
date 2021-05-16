@@ -15,7 +15,8 @@ import { IDataStore, QueryOptions, DeleteResult } from '..';
 
 export class MongoStore implements IDataStore {
   public connect(): Promise<Mongoose> {
-    const MONGODB_URI: string = config.get('mongoDb.uri');
+    console.info(config.get('mongoDb.uri'));
+    const MONGODB_URI: string = config.get('mongoDb.uri') || process.env.MONGODB_URI;
     const options: ConnectionOptions = {
       useNewUrlParser: true,
       useCreateIndex: true,
